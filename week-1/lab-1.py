@@ -18,4 +18,4 @@ w = 100
 b = 50
 x_i = 0.09
 cost_i = w*x_i + b
-print(f"Cost Function = {cost_i} Thousand Dollars")
+print(f"Cost At 1200 Square Feet = {cost_i} Thousand Dollars")
