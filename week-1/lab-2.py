@@ -8,7 +8,7 @@ def compute_cost(x_train, y_train, w, b):
     cost_sum = 0
     
     for i in range(m): 
-        f_wb = w * x_i + b   
+        f_wb = w * x_train[i] + b   
         cost = (f_wb - y_train[i]) ** 2  
         cost_sum = cost_sum + cost  
     
@@ -17,6 +17,5 @@ def compute_cost(x_train, y_train, w, b):
 
 w = 100
 b = 50
-x_i=1.2
 total_cost = compute_cost(x_train, y_train, w, b)
 print("Total Cost =", total_cost)
